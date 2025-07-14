@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamz Studio</title>
+  <link rel="stylesheet" href="stayle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  
+  <body onclick="enablePreviewAudio()" style="cursor: pointer;"></body>
+
+  <!-- Sosial Media Section (Awalnya disembunyikan) -->
+<div id="social-popup" class="social-popup">
+  <span id="close-popup" class="close-btn">❌</span> <!-- Tombol X -->
+  <h2>FOLLOW MY SOSIAL MEDIA</h2>
+  <div class="social-icons">
+    <a href="https://youtube.com" target="_blank">📺 YouTube</a>
+    <a href="https://tiktok.com" target="_blank">🎵 TikTok</a>
+    <a href="https://instagram.com" target="_blank">📷 Instagram</a>
+  </div>
+</div>
+
+  <!-- Section: Landing -->
+  <section class="landing">
+    <nav>
+      <div class="menu-icon">&#9776;</div>
+      <div class="nav-title">MEDIA</div>
+    </nav>
+    <h1 class="main-title">HAMZ STUDIO</h1>
+  </section>
+
+  <!-- Section: Music List -->
+  <section class="music-section">
+    <h2 class="section-title scroll-fade">MUSIK</h2>
+     <ul class="song-list">
+    <li onmouseenter="playPreview('audio/consume.mp3')" onmouseleave="stopPreview()" onclick="window.location.href='play.html?song=0'">
+      <img class="song-art-list" src="https://tse3.mm.bing.net/th?id=OIP.VwivM--7Xx_SmgsqXBLi8AAAAA&pid=Api&P=0&h=220" alt="Consume">
+      <div class="song-info-list">
+        <h3>Consume</h3>
+        <p>Chase Atlantic</p>
+      </div>
+    </li>
+    <li onmouseenter="playPreview('audio/Ed Sheeran - Perfect.mp3')" onmouseleave="stopPreview()" onclick="window.location.href='play.html?song=1'">
+      <img class="song-art-list" src="https://tse4.mm.bing.net/th?id=OIP.TjS4z1jJTsl6K3-ADIXFywHaEK&pid=Api&P=0&h=220" alt="Perfect">
+      <div class="song-info-list">
+        <h3>Perfect</h3>
+        <p>Ed Sheeran</p>
+      </div>
+    </li>
+    <li onmouseenter="playPreview('audio/Katy Perry - Unconditionally.mp3')" onmouseleave="stopPreview()" onclick="window.location.href='play.html?song=2'">
+      <img class="song-art-list" src="https://i.ytimg.com/vi/4NGVxU0qhZ8/maxresdefault.jpg" alt="Unconditionally">
+      <div class="song-info-list">
+        <h3>Unconditionally</h3>
+        <p>Katy Perry</p>
+      </div>
+    </li>
+    <li onmouseenter="playPreview('audio/Naykilla, Tenxi & Jemsii - Kasih Aba-Aba Official Music Video.mp3')" onmouseleave="stopPreview()" onclick="window.location.href='play.html?song=3'">
+      <img class="song-art-list" src="https://image.idntimes.com/post/20250522/1-09cfee9393ddb887a892c77209de32ef.jpg?tr=w-1920" alt="Kasih Aba Aba">
+      <div class="song-info-list">
+        <h3>Kasih Aba Aba</h3>
+        <p>Naykilla, Tenxi & Jemsii</p>
+      </div>
+    </li>
+  </ul>
+
+  <audio id="previewPlayer"></audio>
+
+    <script src="JAWA.JS"></script>
+    
+</body>
+</html>
